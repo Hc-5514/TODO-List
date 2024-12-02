@@ -1,1 +1,11 @@
-spring.application.name=todo-list
+spring:
+  application:
+    name: todo-list
+  profiles:
+    active: dev
+  config:
+    import: optional:configserver:http://54.180.195.231:8888
+
+logging:
+  level:
+    org.springframework.cloud: DEBUG
