@@ -4,7 +4,7 @@ spring:
   profiles:
     active: dev
   config:
-    import: optional:configserver:http://54.180.195.231:8888
+    import: optional:configserver:http://43.203.59.90:8888
 
 logging:
   level:
